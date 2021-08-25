@@ -1,0 +1,142 @@
+:root{
+    --cyan:hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --cyan2: rgb(86,211,196);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    margin: 0 auto;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(260px, 260px);
+    grid-template-rows: repeat(3, minmax(216px, 216px));
+    grid-template-areas: 
+    "join"
+    "subscription"
+    "why-us";
+}
+
+.community{
+    grid-area: join;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+    border-top-left-radius:7px;
+    border-top-right-radius: 7px;
+    padding-left: 1.7rem;
+    padding-right: 30px;
+
+}
+
+.community h1, h2, p{
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+    
+}
+
+.community h1{
+    color: var(--cyan);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.community h2{
+    font-size: 0.9rem;
+    color: var(--bright-yellow);
+}
+
+.community p{
+    font-size: 0.8rem;
+    color: var(--grayish-blue);
+    line-height: 23px;
+}
+
+
+.subscription{
+    grid-area: subscription;
+    background-color: var(--cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1.7rem;
+}
+
+.subscription h1, h2, p{
+    font-family: 'Karla', sans-serif;
+    text-align: left;
+    color:white;
+}
+
+.subscription h1{
+    font-weight: 700;
+}
+
+.subscription h2 span{
+    font-size: 0.8rem;
+    /* padding-bottom: 50px; */
+    font-weight: 400;
+}
+
+.subscription h2{
+    font-size: 1.6rem;
+}
+
+.subscription p{
+    font-size: 0.9rem;
+}
+
+.subscription button{
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 40px;
+    color: white;
+    cursor:pointer;
+}
+
+
+.why-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-area: why-us;
+    background-color: var(--cyan2);
+    font-family: 'Karla', sans-serif;
+    color: white;
+    padding-left: 1.7rem;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.why-us h1{
+    font-size: 1.0rem;
+} 
+
+.why-us ul{
+    line-height: 20px;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+
