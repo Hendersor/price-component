@@ -1,0 +1,35 @@
+
+body{
+    margin-top: 100px;
+}
+
+
+main{
+
+    grid-template-columns: repeat(2, minmax(300px, 300px));
+    grid-template-rows:repeat(2 minmax(216px, 216px));
+    grid-template-areas: 
+    "join join"
+    "subscription why-us"
+}
+
+.community h1{
+    font-size: 1.5rem;
+}
+
+.community h2{
+    font-size: 1.2rem;
+}
+
+.community p{
+    font-size: 0.9rem;
+}
+
+.why-us{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 7px;
+}
+
+.subscription{
+    border-bottom-left-radius: 7px;
+}

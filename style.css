@@ -28,7 +28,7 @@ body{
 main{
     display: grid;
     grid-template-columns: minmax(260px, 260px);
-    grid-template-rows: repeat(3, minmax(216px, 216px));
+    grid-template-rows: repeat(2, minmax(220px, 216px));
     grid-template-areas: 
     "join"
     "subscription"
@@ -93,7 +93,6 @@ main{
 
 .subscription h2 span{
     font-size: 0.8rem;
-    /* padding-bottom: 50px; */
     font-weight: 400;
 }
 
@@ -127,6 +126,7 @@ main{
     padding-left: 1.7rem;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+    height: 220px;
 }
 
 .why-us h1{
